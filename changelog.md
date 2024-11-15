@@ -1,3 +1,53 @@
+## 4.14.6
+
+Rendering performance improvements
+
+AI does not offer open borders trade if other side already has open borders
+
+Don't allow trading away max gold/max gpt to multiple civs
+
+Added 'unit remove all' console command
+
+In trade, if one side has *negative* resources of a certain type, the resource on the other side is colored green
+
+## 4.14.5
+
+Coast edge images for HexaRealm tiles by legacymtgsalvationuser69544 :)
+
+Place edge images over terrains and under improvements, where possible
+
+City-state unique units are not taken from civs within this game
+
+Don't assume the city-state ally knows the civ that attacked the city-state
+
+Modding:
+- Comment text is displayed on event choices
+- Don't allow triggers to decrease city population below 1
+
+Added owned tiles countable - By PLynx01
+
+## 4.14.4
+
+Memory optimizations
+
+AI: Use Great Artists for Golden Ages 
+
+modding: Added "on [difficulty] difficulty" conditional 
+
+Avoid Growth and Food Ranking Improvements  - By itanasi
+
+## 4.14.3
+
+Fixed Wait action when auto unit cycle is disabled
+
+Unresearchable techs not added when starting in advanced era
+
+modding:
+- Added validation to event uniques
+- "upon gaining/losing the [promotion] status" triggers correctly
+- "upon building a [improvementFilter] improvement" triggers correctly
+- "Becomes [terrainName] when adjacent to [terrainFilter]" accepts conditionals
+
 ## 4.14.2
 
 DoF popup requires choosing an option

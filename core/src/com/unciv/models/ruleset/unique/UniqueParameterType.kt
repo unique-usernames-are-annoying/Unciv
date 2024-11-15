@@ -76,6 +76,7 @@ enum class UniqueParameterType(
             parameterText.equalsPlaceholderText("[] Cities") -> true
             parameterText.equalsPlaceholderText("[] Units") -> true
             parameterText.equalsPlaceholderText("Remaining [] Civilizations") -> true
+            parameterText.equalsPlaceholderText("Owned [] Tiles") -> true
             else -> super.isKnownValue(parameterText, ruleset)
         }
 
@@ -356,6 +357,7 @@ enum class UniqueParameterType(
             parameterText in staticKnownValues -> true
             ImprovementFilter.isKnownValue(parameterText, ruleset) -> true
             TerrainFilter.isKnownValue(parameterText, ruleset) -> true
+            CivFilter.isKnownValue(parameterText, ruleset) -> true
             else -> false
         }
 
@@ -425,6 +427,9 @@ enum class UniqueParameterType(
 
     Speed("speed", "Quick", "The name of any speed") {
         override fun getKnownValuesForAutocomplete(ruleset: Ruleset) = ruleset.speeds.keys
+    },
+    Difficulty("difficulty", "Prince", "The name of any difficulty") {
+        override fun getKnownValuesForAutocomplete(ruleset: Ruleset) = ruleset.difficulties.keys
     },
 
     /** For [UniqueType.CreatesOneImprovement] */
